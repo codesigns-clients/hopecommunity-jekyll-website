@@ -1,0 +1,10 @@
+<!-- START: Site Specific Scripts -->
+<script src="https://kit.fontawesome.com/13d29dabf2.js"></script>
+<!-- END: // Site Specific Scripts -->
+
+<script src="/static/js/scripts.js"></script>
+
+<!-- START: Page Specific Scripts -->
+{% if page.custom_js %}{% for js_file in page.custom_js %}<script src='/{{ js_file }}.js'></script>{% endfor %}{% endif %}
+{% if page.external_js %}{% for js_file in page.external_js %}<script src='{{ js_file }}.js'></script>{% endfor %}{% endif %}
+<!-- END: // Page Specific Scripts -->

@@ -1,0 +1,9 @@
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{% if page.social-title %}{{ page.social-title }}{% else %}{{ site.social-title }}{% endif %}" />
+<meta property="og:description" content="{% if page.social-desc %}{{ page.social-desc }}{% else %}{{ site.social-desc }}{% endif %}" />
+<meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:site_name" content="{{site.social-site}}" />
+<meta property="og:image" content="{{site.url}}/assets/images/{% if page.social-image %}{{ page.social-image }}{% else %}{{ site.social-image }}{% endif %}" />
+<meta property="og:image:secure_url" content="{{site.url}}/assets/images/{% if page.social-image %}{{ page.social-image }}{% else %}{{ site.social-image }}{% endif %}" />
+{% if page.card-width %}<meta property="og:image:width" content="{{ page.card-width }}" /><meta property="og:image:height" content="{{ page.card-height }}" />{% endif %}

@@ -1,0 +1,14 @@
+.hero {
+	position: relative;
+	z-index: 1;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+	flex-direction: column;
+}
+
+@import "hero-masks";
+@import "hero-heights";
+@import "hero-content";

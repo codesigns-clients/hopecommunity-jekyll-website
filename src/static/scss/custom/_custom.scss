@@ -1,0 +1,82 @@
+@import "fonts";
+@import "nursery";
+
+.container-xxl {
+	max-width: 1400px;
+}
+
+@include bp (sm) {
+	.container-fluid {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+
+.no-border {
+	border: 0 !important;
+}
+
+.footer a,
+.footer a:hover,
+.footer p,
+.footer li {
+	color: #ffffff;
+}
+
+.footer-contact a {
+	font-size: 1.1rem;
+}
+
+.footer svg {
+	display: block !important;
+	width: 28px !important;
+	height: 28px !important;
+}
+
+.box--transparent {
+	background-color: rgba(255, 255, 255, 0.15)
+}
+
+/* SLICK SLIDER */
+
+.hero-slider {
+	display: none;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-dots {
+	bottom: 25px;
+	li button:before {
+		font-size: 14px;
+		color: white;
+	}
+	li.slick-active button:before {
+		color: white;	
+	}
+}
+
+.sep {
+    width: 50px;
+    height: 7px;
+    border-radius: 50px;
+	margin: 30px auto;
+	&-left {
+		margin: 30px auto 30px 0;
+	}
+}
+
+header .nav-link {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.card .btn-lg {
+	font-size: 0.9rem;
+	@include bp (md) {
+		font-size: 1.4rem;
+	}
+}

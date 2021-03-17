@@ -1,0 +1,1 @@
+$(".hero-slider").slick({infinite:!0,slidesToShow:1,slidesToScroll:1,dots:!0,arrows:!1,autoplay:!0,autoplaySpeed:6e3,pauseOnHover:!1,pauseOnFocus:!1}),$(".hero-slider").show();

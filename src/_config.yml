@@ -1,0 +1,56 @@
+################################################################################################
+# Site Details.
+################################################################################################
+
+jekyll_version: 4.0.0
+
+# the subpath of your site, e.g. /blog/
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: ""
+
+################################################################################################
+# Site Meta.
+################################################################################################
+
+author: Mark Salt
+company: CO:DESIGNS
+title: Hope Community Projects
+description: Hope Community Projects a Coventry based Family Charity
+
+################################################################################################
+# Contact Details.
+################################################################################################
+
+email: contact@me.co.uk
+
+# Telephone Numbers
+phone: +447948157081
+phone-num: 07948 157081
+
+################################################################################################
+# Build settings
+################################################################################################
+
+markdown: kramdown
+# paginate: 20
+# paginate_path: /blog/page:num
+excerpt_separator: "<!-- more -->"
+timezone: Europe/London
+
+#plugins:
+#- jekyll-sitemap
+#- jekyll-paginate
+
+# permalink site wide
+permalink: /articles/:title/
+
+################################################################################################
+# Includes and Excludes.
+################################################################################################
+
+# exclude: [""]
+include: ["_pages", "_legal"]
+
+destination: ../web/

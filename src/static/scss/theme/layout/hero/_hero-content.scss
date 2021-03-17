@@ -1,0 +1,14 @@
+.hero-content {
+	p {
+		font-size: 1.2rem;
+		@include bp (md) {
+			font-size: 1.5rem;
+		}
+		@include bp (lg) {
+			font-size: 1.7rem;
+		}
+		@include bp (xl) {
+			font-size: 2rem;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+{% include site/head/head.html %}
+<body class="{{ page.bodyclass }}">
+	<div id="site" class="site">
+		{% include site/header/header.html %}
+		<main class="site-main">
+			{% if page.hero_enable %}
+				{% if page.hero_type == "bg-image" %}
+					{% include shared/hero/bg-image.html %}
+				{% elsif page.hero_type == "bg-colour" %}
+					{% include shared/hero/bg-colour.html %}
+				{% endif %}	
+			{% endif %}
+			<div class="main-content" id="main-content">
+				{{ content }}
+			</div>
+		</main>
+		{% include site/footer/footer.html %}
+	</div>
+	{% include shared/footer/scripts.html %}
+	{% include site/footer/scripts.html %}
+</body>
+</html>

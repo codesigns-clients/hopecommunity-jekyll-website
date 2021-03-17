@@ -1,0 +1,9 @@
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/shared/vendor/slick-slider/1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/static/shared/vendor/slick-slider/1.8.1/slick/slick-theme.css"/>
+
+<!-- CSS Files -->
+<link rel="stylesheet" href="/static/css/styles.css">
+
+{% if page.pagecss %}{% for css_file in page.pagecss %}<link rel="stylesheet" href="/{{ css_file }}.css">{% endfor %}{% endif %}
+{% if page.externalcss %}{% for css_link in page.externalcss %}<link rel="stylesheet" href="{{ css_link }}">{% endfor %}{% endif %}

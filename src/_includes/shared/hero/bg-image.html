@@ -1,0 +1,16 @@
+<section class="hero-section">
+	<div class="hero {{ page.hero_classes }} {{ page.hero_height }}" style="background-image: url('{{ page.hero_img }}')">
+		<div class="hero-mask {{ page.hero_mask_classes }}"></div>
+		<div class="hero-overlay {{ page.hero_overlay_classes }}"></div>
+		<div class="hero-content {{ page.hero_content_classes }}">
+			<div class="container-fluid container-xxl">
+				<div class="row {{ page.hero_content_row_classes }} {{ page.hero_height }}">
+					<div class="{{ page.hero_content_column_classes }}">
+						{% if page.hero_content_title %}<h2>{{ page.hero_content_title }}</h2>{% endif %}
+						{% if page.hero_content_text %}<p>{{ page.hero_content_text }}</p>{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
