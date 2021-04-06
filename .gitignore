@@ -1,1 +1,6 @@
-/web
+node_modules
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+master-assets
+web
