@@ -53,4 +53,5 @@ permalink: /articles/:title/
 # exclude: [""]
 include: ["_pages", "_legal"]
 
-destination: ../web/
+source: src
+destination: web
